@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "VFS-Toolkit: Åtkomstleverantör för lokal hemmapp"
+    "message": "VFS-Provider: Åtkomst till lokal hemmapp"
   },
   "extensionDescription": {
-    "message": "Ett leverantörstillägg för WebExtensions som använder VFS-verktygslådan och exponerar den lokala hemmappen via inbyggd meddelandehantering."
+    "message": "Ett VFS-Provider tillägg som gör det möjligt för WebExtensions som använder VFS Toolkit att komma åt användarens lokala hemkatalog via ett hjälpprogram för inbyggd meddelandehantering."
   },
   "providerName": {
     "message": "Lokal hemmapp"

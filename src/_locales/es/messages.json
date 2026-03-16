@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "VFS-Toolkit: Proveedor de acceso a la carpeta personal local"
+    "message": "VFS-Provider: Acceso a la carpeta personal local"
   },
   "extensionDescription": {
-    "message": "Un complemento proveedor para WebExtensions que utiliza el kit de herramientas VFS para exponer la carpeta personal local mediante mensajería nativa."
+    "message": "Un complemento VFS-Provider que permite a las WebExtensions que usan el VFS Toolkit acceder a la carpeta de inicio local del usuario a través de una aplicación auxiliar de mensajería nativa."
   },
   "providerName": {
     "message": "Carpeta personal local"

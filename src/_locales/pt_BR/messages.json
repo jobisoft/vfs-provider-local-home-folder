@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "VFS-Toolkit: Provedor de acesso à pasta pessoal local"
+    "message": "VFS-Provider: Acesso à pasta pessoal local"
   },
   "extensionDescription": {
-    "message": "Um complemento provedor para WebExtensions que usa o kit de ferramentas VFS para expor a pasta pessoal local via mensagem nativa."
+    "message": "Um complemento VFS-Provider que permite que WebExtensions usando o VFS Toolkit acessem a pasta inicial local do usuário por meio de um aplicativo auxiliar de mensagens nativas."
   },
   "providerName": {
     "message": "Pasta pessoal local"

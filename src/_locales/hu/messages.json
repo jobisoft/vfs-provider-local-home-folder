@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "VFS-Toolkit: Helyi saját mappa hozzáférés-szolgáltató"
+    "message": "VFS-Provider: Helyi saját mappa hozzáférése"
   },
   "extensionDescription": {
-    "message": "Egy WebExtensions számára készült szolgáltató kiegészítő, amely a VFS eszközkészletet használja, és natív üzenetküldésen keresztül teszi elérhetővé a helyi saját mappát."
+    "message": "Egy VFS-Provider bővítmény, amely lehetővé teszi a VFS Toolkit-et használó WebExtensions számára, hogy natív üzenetküldő segédalkalmazáson keresztül hozzáférjenek a felhasználó helyi kezdőmappájához."
   },
   "providerName": {
     "message": "Helyi saját mappa"

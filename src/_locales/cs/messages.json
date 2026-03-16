@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "VFS-Toolkit: Poskytovatel přístupu k lokální domovské složce"
+    "message": "VFS-Provider: Přístup k lokální domovské složce"
   },
   "extensionDescription": {
-    "message": "Doplněk poskytovatele pro WebExtensions využívající sadu nástrojů VFS, který zpřístupňuje lokální domovskou složku prostřednictvím nativního zasílání zpráv."
+    "message": "Doplněk VFS-Provider, který umožňuje WebExtensions využívajícím VFS Toolkit přistupovat k místní domovské složce uživatele prostřednictvím nativní pomocné aplikace pro zasílání zpráv."
   },
   "providerName": {
     "message": "Lokální domovská složka"

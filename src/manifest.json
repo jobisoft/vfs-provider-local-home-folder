@@ -2,12 +2,12 @@
   "manifest_version": 2,
   "browser_specific_settings": {
     "gecko": {
-      "id": "vfs-toolkit-local-home-folder-provider@jobisoft.de",
+      "id": "vfs-provider-home-folder-access@jobisoft.de",
       "strict_min_version": "128.0"
     }
   },
   "name": "__MSG_extensionName__",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "John Bieling",
   "homepage_url": "https://github.com/jobisoft/Local-Home-Folder-Access-Provider",
   "description": "__MSG_extensionDescription__",
@@ -24,7 +24,8 @@
     ]
   },
   "icons": {
-    "128": "icon.svg"
+    "32": "icon32.png",
+    "64": "icon64.png"
   },
   "options_ui": {
     "page": "options/options.html"

@@ -1,12 +1,12 @@
 {
   "extensionName": {
-    "message": "VFS-Toolkit: Local Home Folder Access Provider"
+    "message": "VFS-Provider: Local Home Folder Access"
   },
   "extensionDescription": {
-    "message": "A provider add-on for WebExtensions using the VFS toolkit, that exposes the local home folder via native messaging."
+    "message": "A VFS-Provider add-on that enables WebExtensions using the VFS Toolkit to access the user's local home folder through a native messaging helper application."
   },
   "providerName": {
-    "message": "Local Home Folder"
+    "message": "Local Home Folder Access"
   },
   "btnCancel": {
     "message": "Cancel"
@@ -24,7 +24,7 @@
     "message": "Revoke"
   },
   "setupTitle": {
-    "message": "Local Home Folder Access Provider"
+    "message": "Local Home Folder Access"
   },
   "setupQuestion": {
     "message": "Grant add-on \"$ADDON_NAME$\" access to your local home folder?",
@@ -108,7 +108,7 @@
     "message": "Native Messaging"
   },
   "optionsIntroP1": {
-    "message": "This add-on provides filesystem access to your local home folder to any WebExtension using the VFS Toolkit. After granting access, these WebExtensions can read/write files in your home folder. Because modern WebExtensions cannot directly access the local file system, it uses Mozilla\u2019s Native Messaging to communicate with a small helper application running on your computer."
+    "message": "This add-on provides file system access to your local home folder to any WebExtension using the VFS Toolkit. After granting access, these WebExtensions can read/write files in your home folder. Because modern WebExtensions cannot directly access the local file system, it uses Mozilla\u2019s Native Messaging to communicate with a small helper application running on your computer."
   },
   "optionsArchitectureP": {
     "message": "The architecture has two parts:"

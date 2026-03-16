@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "VFS-Toolkit: ローカルホームフォルダーアクセスプロバイダー"
+    "message": "VFS-Provider: ローカルホームフォルダーアクセス"
   },
   "extensionDescription": {
-    "message": "VFSツールキットを使用してネイティブメッセージング経由でローカルホームフォルダーを公開するWebExtensions向けプロバイダーアドオン。"
+    "message": "VFS Toolkit を使用する WebExtensions がネイティブメッセージングヘルパーアプリケーションを通じてユーザーのローカルホームフォルダーにアクセスできるようにする VFS provider アドオンです。"
   },
   "providerName": {
     "message": "ローカルホームフォルダー"

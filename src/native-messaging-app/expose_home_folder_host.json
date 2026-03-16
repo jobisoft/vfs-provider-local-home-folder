@@ -3,5 +3,5 @@
   "description": "Native file system host for the vfs-toolkit provider add-on",
   "path": "/path/to/native-messaging-app/expose_home_folder_host.py",
   "type": "stdio",
-  "allowed_extensions": ["vfs-toolkit-local-home-folder-provider@jobisoft.de"]
+  "allowed_extensions": ["vfs-provider-home-folder-access@jobisoft.de"]
 }
