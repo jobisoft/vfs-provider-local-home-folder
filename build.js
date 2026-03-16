@@ -185,8 +185,8 @@ async function main() {
   fs.writeFileSync(vendorMdPath, vendorMd);
   console.log(`  Updated src/VENDOR.md with commit ${sha}`);
 
-  console.log("Creating extension file (dist/extension.xpi) ...");
-  zip("src", "dist/extension.xpi");
+  console.log("Creating extension file (dist/vfs-toolkit-local-home-folder-access-provider.xpi) ...");
+  zip("src", "dist/vfs-toolkit-local-home-folder-access-provider.xpi");
 
   console.log("Build finished. Output is in the 'dist' folder.");
   https.globalAgent.destroy();
