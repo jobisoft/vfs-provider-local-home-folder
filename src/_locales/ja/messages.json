@@ -143,7 +143,7 @@
     "message": "ダウンロード後、パッケージを展開し、展開したフォルダーでターミナルを開き、お使いのプラットフォーム用のスクリプトを実行してください："
   },
   "optionsInstructionsRestart": {
-    "message": "インストール後にThunderbirdを再起動してください。システムにPython 3がインストールされている必要があります。"
+    "message": "インストール後にThunderbirdを再起動してください。"
   },
   "optionsGrantedHeading": {
     "message": "許可済みアクセス"
@@ -165,5 +165,20 @@
   },
   "accessReadWrite": {
     "message": "読み取り / 書き込み"
+  },
+  "optionsInstallWin": {
+    "message": "ダブルクリックするか、コマンドプロンプトから実行してください："
+  },
+  "optionsInstallUnix": {
+    "message": "ターミナルを開いて実行してください："
+  },
+  "optionsPythonWinHint": {
+    "message": "ヘルパーアプリケーションの実行にはPython 3が必要です。Python 3をまだインストールしていない場合は、Microsoft Storeからインストールしてください："
+  },
+  "optionsPythonUnixHint": {
+    "message": "ヘルパーアプリケーションの実行にはPython 3が必要です。まだインストールされていない場合は、システムのパッケージマネージャーを使用してインストールしてください（例）："
+  },
+  "btnGetPython3": {
+    "message": "Python 3を入手"
   }
 }

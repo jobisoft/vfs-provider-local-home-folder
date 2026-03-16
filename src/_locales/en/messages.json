@@ -140,10 +140,10 @@
     "message": "native-home-folder-file-system-access-app.zip"
   },
   "optionsInstructionsP": {
-    "message": "After downloading, extract the package, open a terminal in the extracted folder, and run the script for your platform:"
+    "message": "After downloading, extract the package and run the install script:"
   },
   "optionsInstructionsRestart": {
-    "message": "Restart Thunderbird after installation. Python 3 must be installed on your system."
+    "message": "Restart Thunderbird after installation."
   },
   "optionsGrantedHeading": {
     "message": "Granted Access"
@@ -165,5 +165,20 @@
   },
   "accessReadWrite": {
     "message": "Read / Write"
+  },
+  "optionsInstallWin": {
+    "message": "Double-click or run from a Command Prompt:"
+  },
+  "optionsInstallUnix": {
+    "message": "Open a terminal and run:"
+  },
+  "optionsPythonWinHint": {
+    "message": "Python 3 is required to run the helper application. If you don't have Python 3 yet, install it from the Microsoft Store:"
+  },
+  "optionsPythonUnixHint": {
+    "message": "Python 3 is required to run the helper application. Install it using your system's package manager if not already present, e.g.:"
+  },
+  "btnGetPython3": {
+    "message": "Get Python 3"
   }
 }

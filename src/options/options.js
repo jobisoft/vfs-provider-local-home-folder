@@ -266,5 +266,20 @@ function escHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
+// ── OS-specific section visibility ─────────────────────────────────────────────
+
+async function applyOsSections() {
+  const { os } = await browser.runtime.getPlatformInfo();
+  const isWin = os === 'win';
+  if (isWin) {
+    document.getElementById('install-win').dataset.isUserOs = "true";
+    document.getElementById('python-win').dataset.isUserOs = "true";
+  } else {
+    document.getElementById('install-unix').dataset.isUserOs = "true";
+    document.getElementById('python-unix').dataset.isUserOs = "true";
+  }
+}
+
 runConnectionCheck();
+applyOsSections();
 render();

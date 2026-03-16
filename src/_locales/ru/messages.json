@@ -143,7 +143,7 @@
     "message": "После загрузки распакуйте пакет, откройте терминал в распакованной папке и запустите скрипт для вашей платформы:"
   },
   "optionsInstructionsRestart": {
-    "message": "После установки перезапустите Thunderbird. На вашем компьютере должен быть установлен Python 3."
+    "message": "После установки перезапустите Thunderbird."
   },
   "optionsGrantedHeading": {
     "message": "Предоставленный доступ"
@@ -165,5 +165,20 @@
   },
   "accessReadWrite": {
     "message": "Чтение / Запись"
+  },
+  "optionsInstallWin": {
+    "message": "Дважды щёлкните или запустите из командной строки:"
+  },
+  "optionsInstallUnix": {
+    "message": "Откройте терминал и выполните:"
+  },
+  "optionsPythonWinHint": {
+    "message": "Для запуска вспомогательного приложения необходим Python 3. Если у вас ещё нет Python 3, установите его из Microsoft Store:"
+  },
+  "optionsPythonUnixHint": {
+    "message": "Для запуска вспомогательного приложения необходим Python 3. Установите его с помощью менеджера пакетов вашей системы, если он ещё не установлен, например:"
+  },
+  "btnGetPython3": {
+    "message": "Получить Python 3"
   }
 }

@@ -143,7 +143,7 @@
     "message": "Après le téléchargement, extrayez le paquet, ouvrez un terminal dans le dossier extrait et exécutez le script correspondant à votre plateforme :"
   },
   "optionsInstructionsRestart": {
-    "message": "Redémarrez Thunderbird après l'installation. Python 3 doit être installé sur votre système."
+    "message": "Redémarrez Thunderbird après l'installation."
   },
   "optionsGrantedHeading": {
     "message": "Accès accordés"
@@ -165,5 +165,20 @@
   },
   "accessReadWrite": {
     "message": "Lecture / Écriture"
+  },
+  "optionsInstallWin": {
+    "message": "Double-cliquez ou exécutez depuis une invite de commandes :"
+  },
+  "optionsInstallUnix": {
+    "message": "Ouvrez un terminal et exécutez :"
+  },
+  "optionsPythonWinHint": {
+    "message": "Python 3 est requis pour exécuter l'application auxiliaire. Si vous n'avez pas encore Python 3, installez-le depuis le Microsoft Store :"
+  },
+  "optionsPythonUnixHint": {
+    "message": "Python 3 est requis pour exécuter l'application auxiliaire. Installez-le via le gestionnaire de paquets de votre système s'il n'est pas déjà présent, par ex. :"
+  },
+  "btnGetPython3": {
+    "message": "Obtenir Python 3"
   }
 }

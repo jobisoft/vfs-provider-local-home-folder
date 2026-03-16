@@ -143,7 +143,7 @@
     "message": "A letöltés után csomagolja ki a csomagot, nyisson meg egy terminált a kicsomagolt mappában, és futtassa a platformjának megfelelő szkriptet:"
   },
   "optionsInstructionsRestart": {
-    "message": "A telepítés után indítsa újra a Thunderbirdet. A Python 3-nak telepítve kell lennie a rendszeren."
+    "message": "A telepítés után indítsa újra a Thunderbirdet."
   },
   "optionsGrantedHeading": {
     "message": "Megadott hozzáférések"
@@ -165,5 +165,20 @@
   },
   "accessReadWrite": {
     "message": "Olvasás / Írás"
+  },
+  "optionsInstallWin": {
+    "message": "Kattintson duplán, vagy futtassa parancssorból:"
+  },
+  "optionsInstallUnix": {
+    "message": "Nyisson meg egy terminált, és futtassa:"
+  },
+  "optionsPythonWinHint": {
+    "message": "A segédprogram futtatásához Python 3 szükséges. Ha még nincs Python 3, telepítse a Microsoft Store-ból:"
+  },
+  "optionsPythonUnixHint": {
+    "message": "A segédprogram futtatásához Python 3 szükséges. Telepítse a rendszer csomagkezelőjével, ha még nincs jelen, pl.:"
+  },
+  "btnGetPython3": {
+    "message": "Python 3 letöltése"
   }
 }

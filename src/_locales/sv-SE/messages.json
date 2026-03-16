@@ -143,7 +143,7 @@
     "message": "Efter nedladdning, packa upp paketet, öppna en terminal i den uppackade mappen och kör skriptet för din plattform:"
   },
   "optionsInstructionsRestart": {
-    "message": "Starta om Thunderbird efter installationen. Python 3 måste vara installerat på ditt system."
+    "message": "Starta om Thunderbird efter installationen."
   },
   "optionsGrantedHeading": {
     "message": "Beviljad åtkomst"
@@ -165,5 +165,20 @@
   },
   "accessReadWrite": {
     "message": "Läs / Skriv"
+  },
+  "optionsInstallWin": {
+    "message": "Dubbelklicka eller kör från kommandotolken:"
+  },
+  "optionsInstallUnix": {
+    "message": "Öppna en terminal och kör:"
+  },
+  "optionsPythonWinHint": {
+    "message": "Python 3 krävs för att köra hjälpapplikationen. Om du inte har Python 3 ännu, installera det från Microsoft Store:"
+  },
+  "optionsPythonUnixHint": {
+    "message": "Python 3 krävs för att köra hjälpapplikationen. Installera det med systemets pakethanterare om det inte redan finns, t.ex.:"
+  },
+  "btnGetPython3": {
+    "message": "Hämta Python 3"
   }
 }

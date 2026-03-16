@@ -143,7 +143,7 @@
     "message": "Po stažení rozbalte balíček, otevřete terminál v rozbalené složce a spusťte skript pro vaši platformu:"
   },
   "optionsInstructionsRestart": {
-    "message": "Po instalaci restartujte Thunderbird. V systému musí být nainstalován Python 3."
+    "message": "Po instalaci restartujte Thunderbird."
   },
   "optionsGrantedHeading": {
     "message": "Udělené přístupy"
@@ -165,5 +165,20 @@
   },
   "accessReadWrite": {
     "message": "Čtení / Zápis"
+  },
+  "optionsInstallWin": {
+    "message": "Dvakrát klikněte nebo spusťte z příkazového řádku:"
+  },
+  "optionsInstallUnix": {
+    "message": "Otevřete terminál a spusťte:"
+  },
+  "optionsPythonWinHint": {
+    "message": "Pro spuštění pomocné aplikace je vyžadován Python 3. Pokud ještě Python 3 nemáte, nainstalujte ho z Microsoft Store:"
+  },
+  "optionsPythonUnixHint": {
+    "message": "Pro spuštění pomocné aplikace je vyžadován Python 3. Nainstalujte ho pomocí správce balíčků vašeho systému, pokud ještě není přítomen, např.:"
+  },
+  "btnGetPython3": {
+    "message": "Získat Python 3"
   }
 }

@@ -143,7 +143,7 @@
     "message": "Dopo il download, estrai il pacchetto, apri un terminale nella cartella estratta ed esegui lo script per la tua piattaforma:"
   },
   "optionsInstructionsRestart": {
-    "message": "Riavvia Thunderbird dopo l'installazione. Python 3 deve essere installato nel sistema."
+    "message": "Riavvia Thunderbird dopo l'installazione."
   },
   "optionsGrantedHeading": {
     "message": "Accessi concessi"
@@ -165,5 +165,20 @@
   },
   "accessReadWrite": {
     "message": "Lettura / Scrittura"
+  },
+  "optionsInstallWin": {
+    "message": "Fare doppio clic o eseguire dal prompt dei comandi:"
+  },
+  "optionsInstallUnix": {
+    "message": "Apri un terminale ed esegui:"
+  },
+  "optionsPythonWinHint": {
+    "message": "Python 3 è necessario per eseguire l'applicazione helper. Se non hai ancora Python 3, installalo dal Microsoft Store:"
+  },
+  "optionsPythonUnixHint": {
+    "message": "Python 3 è necessario per eseguire l'applicazione helper. Installalo usando il gestore di pacchetti del sistema se non è già presente, ad es.:"
+  },
+  "btnGetPython3": {
+    "message": "Ottieni Python 3"
   }
 }

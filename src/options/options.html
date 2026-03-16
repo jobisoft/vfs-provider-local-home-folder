@@ -338,6 +338,9 @@
       flex-shrink: 0;
       margin-top: 1px;
     }
+
+    [data-is-user-os] { display: none; }
+    [data-is-user-os="true"]  { display: block; }
   </style>
 </head>
 
@@ -390,10 +393,48 @@
       </div>
 
       <p data-i18n-content="optionsInstructionsP"></p>
-      <ul style="margin: 0 0 12px; padding-left: 20px; line-height: 1.7; color: #475569;">
-        <li><strong>Linux / macOS:</strong> <code>bash install.sh</code></li>
-        <li><strong>Windows:</strong> double-click <code>install.bat</code>, or run it from a Command Prompt</li>
+
+      <!-- Install: Windows -->
+      <ul data-is-user-os="false" id="install-win"
+          style="margin: 0 0 12px; padding-left: 20px; line-height: 1.7; color: #475569;">
+        <li><span data-i18n-content="optionsInstallWin"></span> <code>install.bat</code></li>
       </ul>
+
+      <!-- Install: Linux / macOS -->
+      <ul data-is-user-os="false" id="install-unix"
+          style="margin: 0 0 12px; padding-left: 20px; line-height: 1.7; color: #475569;">
+        <li><span data-i18n-content="optionsInstallUnix"></span> <code>bash install.sh</code></li>
+      </ul>
+
+      <!-- Python: Windows -->
+      <div data-is-user-os="false" id="python-win">
+        <p style="margin: 12px 0 8px; line-height: 1.7; color: #475569;"
+           data-i18n-content="optionsPythonWinHint"></p>
+        <div class="download-box">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+            <path d="M12 8v4l3 3"/>
+          </svg>
+          <div class="dl-text">
+            <strong>Python 3</strong>
+            <span>Microsoft Store</span>
+          </div>
+          <a href="https://apps.microsoft.com/detail/9nq7512cxl7t" target="_blank" rel="noopener noreferrer"
+             data-i18n-content="btnGetPython3"></a>
+        </div>
+      </div>
+
+      <!-- Python: Linux / macOS -->
+      <div data-is-user-os="false" id="python-unix">
+        <p style="margin: 12px 0 4px; line-height: 1.7; color: #475569;"
+           data-i18n-content="optionsPythonUnixHint"></p>
+        <ul style="margin: 0 0 4px; padding-left: 20px; line-height: 1.7; color: #475569;">
+          <li>Debian / Ubuntu: <code>sudo apt install python3</code></li>
+          <li>Fedora: <code>sudo dnf install python3</code></li>
+          <li>macOS (Homebrew): <code>brew install python3</code></li>
+        </ul>
+      </div>
       <p data-i18n-content="optionsInstructionsRestart"></p>
     </div>
 
