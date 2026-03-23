@@ -2,7 +2,9 @@ import { localizeDocument } from '../vendor/i18n.mjs';
 
 localizeDocument();
 
-const STORAGE_KEY = 'vfs-toolkit-local-show-hidden';
+const params = new URLSearchParams(location.search);
+const storageId = params.get('storageId');
+const STORAGE_KEY = `vfs-toolkit-local-show-hidden-${storageId}`;
 
 const checkbox = document.getElementById('show-hidden');
 const savedNotice = document.getElementById('saved-notice');

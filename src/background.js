@@ -150,8 +150,9 @@ class NativeFsVfsProvider extends VfsProviderImplementation {
 
   async onList(requestId, storageId, path) {
     await this.#assertAuth(storageId);
-    const rv = await browser.storage.local.get({ 'vfs-toolkit-local-show-hidden': false });
-    return this.#send(requestId, 'list', { path, showHidden: rv['vfs-toolkit-local-show-hidden'] });
+    const key = `vfs-toolkit-local-show-hidden-${storageId}`;
+    const rv = await browser.storage.local.get({ [key]: false });
+    return this.#send(requestId, 'list', { path, showHidden: rv[key] });
   }
 
   async onReadFile(requestId, storageId, path) {
@@ -239,12 +240,18 @@ class NativeFsVfsProvider extends VfsProviderImplementation {
 
   async onDeleteFile(requestId, storageId, path) {
     await this.#assertAuth(storageId);
-    await this.#send(requestId, 'deleteFile', { path });
+    // vfs-toolkit contract: delete is silent if the target does not exist.
+    await this.#send(requestId, 'deleteFile', { path }).catch(e => {
+      if (e.code !== 'E:NOTFOUND') throw e;
+    });
   }
 
   async onDeleteFolder(requestId, storageId, path) {
     await this.#assertAuth(storageId);
-    await this.#send(requestId, 'deleteFolder', { path });
+    // vfs-toolkit contract: delete is silent if the target does not exist.
+    await this.#send(requestId, 'deleteFolder', { path }).catch(e => {
+      if (e.code !== 'E:NOTFOUND') throw e;
+    });
   }
 
   // ── Lifecycle ────────────────────────────────────────────────────────────────
@@ -273,11 +280,12 @@ browser.runtime.onInstalled.addListener(({ reason }) => {
   if (reason === 'install') browser.runtime.openOptionsPage();
 });
 
-// When the "show hidden files" config changes, tell all open pickers to refresh.
-browser.storage.onChanged.addListener(async (changes, area) => {
-  if (area !== 'local' || !('vfs-toolkit-local-show-hidden' in changes)) return;
-  const rv = await browser.storage.local.get({ [CONNECTIONS_KEY]: [] });
-  for (const conn of rv[CONNECTIONS_KEY]) {
-    provider.reportStorageChange(conn.storageId, [{ path: '/', kind: 'directory', action: 'modified' }]);
+// When the "show hidden files" config changes, tell affected pickers to refresh.
+browser.storage.onChanged.addListener((changes, area) => {
+  if (area !== 'local') return;
+  for (const key of Object.keys(changes)) {
+    if (!key.startsWith('vfs-toolkit-local-show-hidden-')) continue;
+    const storageId = key.slice('vfs-toolkit-local-show-hidden-'.length);
+    provider.reportStorageChange(storageId, [{ targetPath: '/', kind: 'directory', action: 'modified' }]);
   }
 });
