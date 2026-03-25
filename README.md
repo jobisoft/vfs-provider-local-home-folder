@@ -6,6 +6,10 @@ A VFS provider add-on that enables WebExtensions using the [VFS Toolkit](https:/
   <em>Example of a VFS Toolkit file picker using the "Local Home Folder Access Provider".</em>
 </p>
 
+## Test
+
+To test this provider, install the `vfs-toolkit-example-client.xpi` file from the [VFS-Toolkit](https://github.com/thunderbird/webext-support/tree/master/modules/vfs-toolkit), and the `vfs-provider-home-folder-access.xpi` file from the [latest release](https://github.com/jobisoft/vfs-provider-local-home-folder/releases) of the local home folder provider add-on.
+
 ## Build
 
 Set the desired version in `package.json`, then run:
